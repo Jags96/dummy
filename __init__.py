@@ -1,4 +1,8 @@
-from prompt import token_count 
-def report_count(token):
-    number = token_count(token)
-    print(f'The term {token} shows up in the corpus {number} times')
+def token_count(token):
+    count = 0
+    with open('corpus.txt') as file:
+        text = file.read()
+    for w in text.split():
+        if w == token:
+            count += 1
+    return count
