@@ -1,8 +1,8 @@
 def token_count(token):
     count = 0
     try:
-        with open('corpus.txt') as file:
-            text = file.read()
+        with open('corpus.txt','r') as file:
+            text = file.read().lower()
         for w in text.split():
             if w == token:
                 count += 1
