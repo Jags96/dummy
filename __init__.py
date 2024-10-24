@@ -1,2 +1,2 @@
-from prompt import report_count
+from prompt import prompt
 
