@@ -1,4 +1,4 @@
-from .report_count import report_counter
+from .counter import report_counter
 
 
 def report_count(token):
